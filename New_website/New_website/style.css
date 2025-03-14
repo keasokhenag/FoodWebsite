@@ -1,0 +1,255 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: red;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) , yellow);
+    width: 95%;
+    height: 900px;
+    margin: auto;
+}
+ul{
+    display: flex;
+    gap: 10px;
+}
+.ul,li{
+   background-color: rgb(248, 244, 248);
+   width: 200px;
+   height: 30px;
+   margin-top: 20px;
+   margin-left: 40px;
+   
+}
+.ul,li,a{
+    text-decoration: none;
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 20px;
+    color: rgb(16, 17, 17);
+    align-items: center;
+
+}
+.ul,li:hover{
+    background-color: rgb(235, 239, 25);
+    border: 2px solid black;
+    box-shadow: 0 0 5px 2px;
+    
+}
+.ul,li,a:hover{
+    color: black;
+}
+.rightbox{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin-left: 80px;
+}
+.image{
+    position: relative;
+    width: 50%;
+}
+.image img{
+    width: 100%;
+    height: 350px;
+}
+.textone{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -40%);
+    padding: 130px;
+}
+.textone h4{
+    background-color: rgb(218, 228, 11);
+    height: 20px;
+    padding: 10px;
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+    font-size: 30px;
+    margin-left: 90px;
+}
+.textone p{
+    background-color: rgb(218, 228, 11);
+    height: 10px;
+    padding: 10px;
+    width: 150px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin-left: 90px;
+}
+.boxprice{
+    
+    margin-left: 100px;
+    width:32%;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    flex-direction: column;
+
+}
+.price{
+    background-color: rgb(243, 245, 242);
+    box-shadow: 0 0 5px 2px;
+}
+.boxtwo{
+    margin-top: 170px;
+    width: 88%;
+    /* align-items: center;
+    justify-content: center; */
+    display: flex;
+    gap: 50px;
+    margin-left: 80px;
+}
+.box{
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px;
+}
+.box:hover{
+    background-color: rgb(19, 19, 20);
+    color: aliceblue;
+    border: 3px solid white;
+    transition: 0.3s;
+}
+.box p{
+    font-size: 20px;
+}
+
+.box>i{
+    font-size: 30px;
+}
+.boxthree{
+    width: 90%;
+    background-color: rgb(246, 246, 246);
+    margin-top: 50px;
+    height: 400px;
+    margin-left: 65px;
+}
+.boxthree .foodpic{
+    width: 40%;
+    height: 380px;
+    float: left;
+}
+.foodpic img{
+    width: 100%;
+
+}
+.boxthree .righttext{
+    float: right;
+    width: 50%;
+    margin-right: 100px;
+    height: 20vh;
+    margin-top: 10px;  
+}
+.righttext h1{
+    font-size: 40px;
+}
+.righttext p{
+    font-size: 20px;
+    text-indent: 40px;
+    text-align: justify;
+    
+}
+.righttext>button{
+    background-color: yellow;
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    
+   
+}
+.righttext>button:hover{
+    background-color: black;
+    color: rgb(231, 235, 8);
+    border: 4px solid rgb(239, 235, 6);
+}
+.footer{
+    width: 94%;
+    height: 80vh;
+    margin-left: 60px;
+    margin-top: 80px;
+    clear: both;
+}
+.footer h3{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.pic{
+    margin: 40px;
+    padding: 30px;
+}
+.pic>img{
+    width: 15%;
+    height: 200px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px ;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .rightbox {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .boxtwo, .boxthree {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .boxthree {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .righttext {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .pic img {
+        width: 45%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+
